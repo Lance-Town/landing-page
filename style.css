@@ -1,50 +1,65 @@
 * {
     padding: 0;
     margin: 0;
+    list-style: none;
+    text-decoration: none;
+    color: #F9FAF8;
 }
 
 body {
     background-color: rgb(33, 41, 54);
+    margin: 0 auto;
+    width: 900px;
 }
 
 .content-one {
     display: flex;
-    flex-direction: column;
-    height: 600px;
-    border: 1px solid greenyellow;
-}
-
-.header {
-    display: flex;
+    justify-content: space-around;
+    max-height: 500px;
     flex: 0;
-    min-width: 100%;
-    min-height: 70px;
-    border: 1px solid red;
-    justify-content: space-around;
-    align-items: center;
 }
 
-h1 {
+.right-aligned-content, .left-aligned-content {
+    display: flex;
+    flex-direction: column;
+    color: lightblue;
+}
+
+.content-one .left-aligned-content .header {
     color: white;
-    margin-left: 90px;
 }
 
-.header ul{
-    list-style: none;
-    margin-right: 90px;
+.content-one .left-aligned-content .text, .content-one .right-aligned-content img {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.content-one .right-aligned-content ul {
     display: flex;
-    gap: 10px;
+    justify-content: flex-end;
+    gap: 12px;
+    margin: 16px 0;
 }
 
-a {
-    color: rgb(199, 202, 207);
-    text-decoration: none;
-    padding: 10px;
+.content-one .right-aligned-content a {
+    color: #E5E7EB;
+    padding: 16px 0 16px 16px;
 }
 
-.description {
-    display: flex;
-    min-height: 300px;
-    border: 1px solid purple;
-    justify-content: space-around;
+.content-one .right-aligned-content img {
+    width: 450px;
+    height: auto;
+}
+
+.content-one .left-aligned-content .text {
+    max-width: 450px;
+}
+
+.content-one .left-aligned-content .text .big-text {
+    font-size: 42px;
+    font-weight: 900;
+}
+
+.content-one .left-aligned-content .text {
+    font-size: 24px;
 }
